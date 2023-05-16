@@ -2,8 +2,9 @@
   "name": "turbo-playwright-next",
   "private": true,
   "scripts": {
-    "ci": "turbo run build e2e:test lint",
     "build": "turbo run build",
+    "build:web": "turbo run build --filter=web...",
+    "ci": "turbo run build test:e2e lint",
     "dev": "turbo run dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo run lint"
